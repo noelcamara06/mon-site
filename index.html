@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notre Mariage 💍</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+<body>
+
+<!-- PAGE 1 : ACCUEIL -->
+
+<section class="page active" id="page1">
+    <div class="content">
+        <h1>❤️ Elle a dit Oui ❤️</h1>
+        <p>Une nouvelle aventure commence...</p>
+        <button onclick="nextPage()">
+            Découvrir notre mariage
+        </button>
+    </div>
+</section>
+
+
+<!-- PAGE 2 : PRESENTATION -->
+
+<section class="page" id="page2">
+    <div class="content">
+        <h1>💍 Notre Mariage</h1>
+        <h2>Noel CAMARA & Thérèse KEITA</h2>
+        <p> Nous sommes heureux de vous inviter à partager ces moments uniques avec nous.</p>
+        <button onclick="nextPage()">
+            Voir le programme
+        </button>
+        <br>
+        <button class="back" onclick="previousPage()">
+            ← Retour
+        </button>
+    </div>
+</section>
+
+
+<!-- PAGE 3 : PROGRAMME -->
+
+<section class="page" id="page3">
+    <div class="content">
+        <h1>📅 Programme</h1>
+        <p> Trois jours pour célébrer notre amour</p>
+        <div class="days">
+            <div class="card" onclick="goPage(4)">
+                <h2>💒 Jour 1</h2>
+                <p>La mairie</p>
+            </div>
+            <div class="card" onclick="goPage(5)">
+                <h2>🥂 Jour 2</h2>
+                <p> La soirée </p>
+            </div>
+            <div class="card" onclick="goPage(6)">
+                <h2>⛪ Jour 3</h2>
+                <p> L'église</p>
+            </div>
+        </div>
+        <button class="back" onclick="previousPage()">
+            ← Retour
+        </button>
+    </div>
+</section>
+
+
+<!-- PAGE 4 : MAIRIE -->
+
+<!-- JOUR 1 -->
+
+<section class="page" id="page4">
+    <div class="content">
+        <h1>💒 Jour 1</h1>
+        <h2> La mairie </h2>
+        <div class="info">
+            <p> 📅 Jeudi 10 Décembre 2026 </p>
+            <p> ⏰ 14h00 </p>
+            <p>📍 Mairie </p>
+            <hr>
+                <h3> Programme </h3>
+                <p> 13h30 - Arrivée des invités </p>
+                <p> 14h00 - Cérémonie civile </p>
+                <p> 15h00 - Photos </p>
+        </div>
+        <button onclick="goPage(3)">
+            ← Programme
+        </button>
+    </div>
+</section>
+
+
+<!-- PAGE 5 : SOIREE -->
+
+<!-- JOUR 2 -->
+
+<section class="page" id="page5">
+    <div class="content">
+        <h1>🥂 Jour 2</h1>
+        <h2> La soirée </h2>
+        <div class="info">
+            <p> 📅 Vendredi 11 Décembre 2026 </p>
+            <p> ⏰ 19h00 </p>
+            <p>📍 Salle de réception </p>
+            <hr>
+            <h3> Programme </h3>
+            <p> 19h00 - Accueil </p>
+            <p> 20h00 - Dîner </p>
+            <p> 22h00 - Danse 🎶 </p>
+            <p> 00h00 - Surprise ❤️ </p>
+        </div>
+        <button onclick="goPage(3)">
+            ← Programme
+        </button>
+    </div>
+</section>
+
+
+<!-- PAGE 6 : EGLISE -->
+
+<!-- JOUR 3 -->
+
+<section class="page" id="page6">
+    <div class="content">
+        <h1>⛪ Jour 3</h1>
+        <h2> L'église   </h2>
+        <div class="info">
+            <p> 📅 Samedi 12 Décembre 2026 </p>
+            <p> ⏰ 11h00 </p>
+            <p>📍 Église Saints Martyrs de l'Ouganda
+                <br> Djélibougou/Mali
+            </p>
+            <hr>
+            <h3> Programme </h3>
+            <p> 10h30 - Accueil </p>
+            <p> 11h00 - Cérémonie </p>
+            <p> 12h30 - Photos </p>
+        </div>
+        <button onclick="nextPage()">
+            RSVP (Répondez s'il vous plaît) 💌
+        </button>
+</div>
+</section>
+
+
+
+<!-- PAGE 7 : RSVP -->
+
+<!--
+<section class="page" id="page7">
+    <div class="content">
+        <h1>💌 Confirmation</h1>
+        <p>
+            Merci de confirmer votre présence.
+        </p>
+        <input type="text" placeholder="Votre nom">
+        <select>
+            <option> Nombre de personnes</option>
+            <option> 1 personne  </option>
+            <option> 2 personnes </option>
+            <option> 3 personnes </option>
+        </select>
+        <br>
+            <button>Envoyer</button>
+        <br>
+            <button onclick="goPage(3)">← Programme </button>
+    </div>
+</section>
+-->
+<section class="page" id="page7">
+    <div class="info">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSck-mKUmk4sFs_PDnFvBDdXQv2Oexgaxseakxfef8Oqwtq_cQ/viewform?embedded=true" 
+        width="560" height="399" frameborder="0" marginheight="0" marginwidth="0">
+        Chargement…</iframe>
+        <button onclick="goPage(3)">
+            ← Programme
+        </button>
+    </div>
+<!--
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSck-mKUmk4sFs_PDnFvBDdXQv2Oexgaxseakxfef8Oqwtq_cQ/viewform?usp=dialog" method="POST">
+    <input type="text" name="nom" placeholder="Votre nom" required>
+    <select name="nombre_personnes" required>
+        <option value="">Nombre de personnes</option>
+        <option value="1">1 personne</option>
+        <option value="2">2 personnes</option>
+        <option value="3">3 personnes</option>
+    </select>
+    <button type="submit">Envoyer</button>
+    <button onclick="goPage(3)">← Programme </button>
+</form>
+-->
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
